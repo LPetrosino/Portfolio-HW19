@@ -1,0 +1,596 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    background: #F3F6FA;
+}
+.backgroundImage2 {
+    background-image: url('https://github.com/LPetrosino/Portfolio-HW18/blob/main/images/backgroundImage2.png?raw=true');
+    background-size: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 0;
+}
+@media only screen and (max-width: 600px) {
+    .backgroundImage2 {
+        background-image: url('https://github.com/LPetrosino/Portfolio-HW18/blob/main/images/backgroundphone2.png?raw=true');
+        background-size: 100%;
+        height: 100%;
+        background-repeat: no-repeat;
+    }
+}
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 88px;
+}
+.navText {
+    position: static;
+    left: 24.83%;
+    right: 24.83%;
+    top: 40.48%;
+    bottom: 40.48%;
+
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 16px;
+    /* identical to box height, or 67% */
+    color: #FFFFFF;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+#navTextb {
+    margin-inline-end: auto;
+}
+#navButton {
+    background: rgba(47, 52, 83, 0.3);
+    border: 2px solid #FFFFFF;
+    backdrop-filter: blur(6px);
+    /* Note: backdrop-filter has minimal browser support */
+    border-radius: 4px;
+}
+.content {
+    top: 0%;
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+}
+@media only screen and (max-width: 600px) {
+    .content {
+        width: 90%;
+    }
+}
+.heroText{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    width: 100%;
+    margin-top: 22%;
+    margin-bottom: auto;
+}
+@media only screen and (max-width: 1200px) {
+    .heroText{
+        margin-top: 12%;
+    }
+}
+@media only screen and (max-width: 900px) {
+    .heroText{
+        margin-top: 6%;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .heroText{
+        flex-direction: column;
+    }
+}
+.heroTextlayout{
+    margin-left: 4%;
+}
+.heroButton {
+    background: rgba(47, 52, 83, 0.3);
+    border: 2px solid #FFFFFF;
+    backdrop-filter: blur(6px);
+    /* Note: backdrop-filter has minimal browser support */
+    border-radius: 4px;
+    margin-left: 5%;
+}
+@media only screen and (max-width: 600px) {
+    .heroButton {
+        margin-left: 0%;
+        margin-right: 5%;
+    }
+}
+.heroButtonlayout{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.aboutcta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -6%;
+    margin-bottom: 1%;
+    color: #FFFFFF;
+
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 33.99px;
+    line-height: 65px;
+    position: relative;
+    z-index: 1;
+    order: 3;
+}
+@media only screen and (max-width: 1024px) {
+    .aboutcta {
+        margin-top: -8%;
+    }
+}
+@media only screen and (max-width: 900px) {
+    .aboutcta {
+        margin-top: -11%;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .aboutcta {
+        margin-top: -22%;
+    }
+}
+.aboutcta img {
+    margin-left: 2%;
+    height: 3.5rem;
+}
+@media only screen and (max-width: 600px) {
+    .aboutcta img {
+        height: 3rem;
+    }
+}
+.sectionTitles {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 4%;
+    color: #173256;
+
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 33.99px;
+    line-height: 65px;
+    order: 3;
+}
+.footerText {
+    left: 24.83%;
+    right: 24.83%;
+    top: 40.48%;
+    bottom: 40.48%;
+
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    /* identical to box height, or 67% */
+    color: #FFFFFF;
+}
+#footerTextb {
+    margin-left: 30px;
+    margin-right: auto;
+}
+.H1 {
+    left: 0%;
+    right: 40.81%;
+    top: 0%;
+    bottom: 30.16%;
+
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 96px;
+    line-height: 110px;
+    /* or 115% */
+
+    display: flex;
+    align-items: center;
+
+    color: #FFFFFF;
+
+
+    /* Inside Auto Layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin-bottom: 15px;
+}
+@media only screen and (max-width: 1200px) {
+    .H1 {
+        font-family: 'Montserrat', sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 60px;
+        line-height: 70px;
+    }
+}
+@media only screen and (max-width: 900px) {
+    .H1 {
+        font-family: 'Montserrat', sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 70px;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .H1 {
+        font-family: 'Montserrat', sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 40px;
+    }
+}
+.line {
+    position: static;
+    width: 100%;
+    height: 0px;
+    left: 0px;
+    top: 235px;
+    
+    border: 1px solid #FFFFFF;
+    
+    /* Inside Auto Layout */
+    
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 15px 0px;
+}
+.line2, .line3 {
+    width: 86%;
+    height: 1.5px;
+    background: #D8DEE4;
+    margin-left: 7%;
+    margin-right: 7%;
+}
+.myPhoto {
+    border-radius: 50%;
+    position: static;
+    width: 325px;
+    height: 325px;
+}
+@media only screen and (max-width: 600px) {
+    .myPhoto {
+        margin-left: 0%;
+        width: 230px;
+        height: 230px;
+        margin-bottom: 6%;
+        
+    }
+}
+.subH {
+    position: static;
+    width: 100%;
+    height: 65px;
+    left: 0px;
+    top: 250px;
+    
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 33.99px;
+    line-height: 65px;
+    /* identical to box height, or 191% */
+    
+    display: flex;
+    align-items: center;
+    text-indent: 6px;
+    
+    color: #FFFFFF;
+    
+    
+    /* Inside Auto Layout */
+    
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+    margin: 15px 0px;
+}
+@media only screen and (max-width: 1200px) {
+    .subH {
+        font-family: 'Montserrat', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 32px;
+        line-height: 40.5px;
+    }
+}
+@media only screen and (max-width: 900px) {
+    .subH {
+        font-family: 'Montserrat', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 28px;
+        line-height: 38.5px;
+    }
+}
+#projectSection {
+    width: 100%;
+    padding-bottom: 69px;
+    margin-bottom: 8%;
+    height: auto;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);;
+
+    background: rgba(255, 255, 255, 0.88);
+    backdrop-filter: blur(10px);
+    position: relative;
+    z-index: 1;
+    
+    /* Note: backdrop-filter has minimal browser support */
+}
+#projects {
+    display: inline-flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 74px;
+}
+h3, p {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 29px;
+    color: #FFFFFF;
+    margin-left: 2%;
+}
+h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 29px;
+    color: #173256;   
+}
+@media only screen and (max-width: 500px) {
+    h4 {
+        font-size: 18px;
+    }
+}
+footer {
+    background: #60748E;
+    width: 100%;
+}
+@media only screen and (max-width: 500px) {
+    footer {
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+}
+.fContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    margin-left: 11.46%;
+    margin-right: 11.46%;
+}
+@media only screen and (max-width: 600px) {
+    .fContainer{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: auto;
+        align-content: center;
+        align-items: stretch;
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+.footerItems{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin: 1%;
+}
+.footerItem2{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;;
+    margin-right: auto;
+}
+@media only screen and (max-width: 600px) {
+    .footerItem2{
+        margin: 1%;
+    }
+}
+#lnkdIn {
+    margin-left: 1rem;
+}
+@media only screen and (max-width: 500px) {
+    #lnkdIn {
+        margin-left: 2%;
+    }
+}
+button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: bottom;
+    padding: 18px 25px;
+    height: 52px;
+    
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 16px;
+    /* identical to box height, or 67% */
+    color: #FFFFFF;
+}
+@media only screen and (max-width: 600px) {
+    button {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        position: bottom;
+        padding: 18px 25px;
+        height: 52px;
+        
+        font-family: 'Montserrat', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 16px;
+        /* identical to box height, or 67% */
+        color: #FFFFFF;
+    }
+}
+.contactButton {
+    background: transparent;
+    border: 2px solid #FFFFFF;
+    /* Note: backdrop-filter has minimal browser support */
+    border-radius: 4px;
+}
+.cvButton {
+    background: transparent;
+    border: 2px solid #FFFFFF;
+    /* Note: backdrop-filter has minimal browser support */
+    border-radius: 4px;
+}
+@media only screen and (max-width: 860px) {
+    .cvButton {
+        border: 2px solid #FFFFFF;
+        /* Note: backdrop-filter has minimal browser support */
+        border-radius: 4px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+.cntr {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+
+    position: absolute;
+    width: 223px;
+    height: 49px;
+    left: calc(50% - 223px/2 + 0.5px);
+    top: 880px;
+}
+.card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    margin-left: 8%;
+    margin-right: 8%;
+    position: relative;
+}
+.card1image{
+    width: 100%;
+    height: 100%
+    
+}
+  /* On mouse-over, add a deeper shadow */
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+  /* Add some padding inside the card container */
+.container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0,0);
+}
+.container:hover {
+    opacity: 1;
+    background: rgba(203, 209, 218, 0.2);
+    backdrop-filter: blur(4px);
+    transition: .5s ease;
+}
+#tools {
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+@media only screen and (max-width: 900px) {
+    #tools {
+        display: flex;
+    }
+}
+.toolContatiner img{
+    height: 5rem;
+}
+@media only screen and (max-width: 600px) {
+    .toolContatiner img{
+        height: 3rem;
+    }
+}
+.toolSection1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; 
+}
+@media only screen and (max-width: 900px) {
+    .toolSection1 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center; 
+    }
+}
+.toolContatiner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+
+    /* Inside Auto Layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 80px;
+}
+@media only screen and (max-width: 752px) {
+    .toolContatiner {
+        margin: 0px 20px;
+    }
+}
+.skills {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 4%;
+    margin-bottom: 4%;
+    margin-left: 7%;
+    margin-right: 7%;
+}
+.skills li {
+    list-style: none;
+
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 29px;
+    color: #173256;
+}
+@media only screen and (max-width: 900px) {
+    .skills li {
+        font-size: 18px;
+    }
+}
