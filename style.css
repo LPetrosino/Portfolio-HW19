@@ -19,6 +19,9 @@ html, body {
         background-repeat: no-repeat;
     }
 }
+.logo{
+    width: 30px;
+}
 nav {
     display: flex;
     flex-direction: row;
@@ -193,7 +196,7 @@ nav {
     .H1 {
         font-family: 'Montserrat', sans-serif;
         font-style: normal;
-        font-weight: 600;
+        font-weight: 500;
         font-size: 50px;
         line-height: 60px;
     }
@@ -221,6 +224,24 @@ nav {
     margin-left: 7%;
     margin-right: 7%;
 }
+#blurb {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    position: static;
+    margin-right: 8%;
+    padding-left: 4%;
+}
+@media only screen and (max-width: 600px) {
+    #blurb {
+        margin-left: 5%;
+        margin-right: 5%;
+        align-items: center;
+        justify-content: center;
+        padding-left: 0%;
+    }
+}
 .myPhoto {
     border-radius: 50%;
     position: static;
@@ -246,22 +267,6 @@ nav {
         width: 290px;
         height: 290px;
         
-    }
-}
-#blurb {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    justify-content: center;
-    position: static;
-    margin-right: 8%;
-}
-@media only screen and (max-width: 600px) {
-    #blurb {
-        margin-left: 5%;
-        margin-right: 5%;
-        align-items: center;
-        justify-content: center;
     }
 }
 .subH {
@@ -321,11 +326,41 @@ nav {
     z-index: 1;
     /* Note: backdrop-filter has minimal browser support */
 }
+.sectionTitles {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 5%;
+    margin-bottom: 4%;
+    color: #173256;
+
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 33.99px;
+    line-height: 65px;
+    order: 3;
+}
+@media only screen and (max-width: 600px) {
+    .sectionTitles {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 4%;
+        color: #173256;
+    
+        font-family: 'Montserrat', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 28px;
+        line-height: 40px;
+        margin-left: 10%;
+    }
+}
 #projects {
-    display: inline-flex;
     justify-content: center;
     width: 100%;
-    margin-bottom: 74px;
+    margin-bottom: 30px;
 }
 #aboutMe {
     margin-top: 75px;
@@ -341,46 +376,28 @@ nav {
         align-items: center;
     }
 }
-.card1 {
-    position: static;
-    width: 40%;
-    left: 56px;
-    top: 47px;
-
-    /* Inside Auto Layout */
-
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-    margin: 0px 37px;
-    background-color: white;
-    filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.25));
-}
-.cardImg {
-    position: static;
-    width: 100%;
-    left: calc(50% - 545px/2);
-    top: 0%;
-    flex: none;
-    order: 0;
-    align-self: auto;
-    flex-grow: 0;
-    margin: 0px 0px;
-    border: 0.5px solid rgba(13, 50, 89, 0.2);
-}
-.cardDesc {
+.mockup {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    padding-left: 5%;
-    padding-right: 5%;
-
-    position: static;
-    width: fit-content;
-    height: inherit;
-
-    background: #FFFFFF;
-    box-sizing: border-box;
+    margin-left: 7%;
+    margin-right: 7%;
+}
+@media only screen and (max-width: 600px) {
+    .mockup {
+        display: flex;
+        flex-direction: column;
+        margin: 4%;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .mockup img {
+        width: auto;
+        order: 1;
+    }
+}
+.mockupText {
+    display: flex;
+    flex-direction: column;
+    order: 2;
 }
 h3, p {
     font-family: 'Montserrat', sans-serif;
@@ -461,6 +478,20 @@ footer {
         margin-left: 2%;
     }
 }
+.mockupButton {
+    background: #FFFFff;
+    border: 2px solid #485F86;
+    backdrop-filter: blur(6px);
+    border-radius: 4px;
+    margin-left: auto;
+    color: #485F86;
+}
+@media only screen and (max-width: 600px) {
+    .mockupButton {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
 button {
     display: flex;
     flex-direction: row;
@@ -522,8 +553,7 @@ button {
 }
 .card1image{
     width: 100%;
-    height: 100%
-    
+    height: 100%;
 }
   /* On mouse-over, add a deeper shadow */
 .card:hover {
