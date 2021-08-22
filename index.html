@@ -8,17 +8,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Hotjar Tracking Code for https://lpetrosino.github.io/My_First_Repo/ -->
-    <script>    
-        (function(h,o,t,j,a,r){
-            h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-            h._hjSettings={hjid:2517345,hjsv:6};
-            a=o.getElementsByTagName('head')[0];
-            r=o.createElement('script');r.async=1;
-            r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-            a.appendChild(r);
-        })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-    </script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="/script.js"></script>
     <title>Document</title>
 </head>
 <body>
@@ -29,7 +20,7 @@
                     <img class="logo" src="https://github.com/LPetrosino/Portfolio-HW19/blob/main/images/logo.png?raw=true" alt="">
                     <a id="navTexta" class="navText" href="about.html">About</a>
                     <a id="navTextb" class="navText" href="index.html">Projects</a>
-                    <button id="navButton" href="">Get In Touch</button>
+                    <button id="navButton" href="" onmouseover="navbuttonhover()" onmouseleave="navbutton()">Get In Touch</button>
                 </nav>
             </header>
             <div Class="heroText">
@@ -40,7 +31,7 @@
         </div>
     </div>
     <div class="content">
-        <div class="projectscta">Projects
+        <div class="projectscta" id="projectscta">Projects
             <img src="https://github.com/LPetrosino/Portfolio-HW18/blob/main/images/arrow.png?raw=true">
         </div>
         <div id="projectSection">
@@ -51,7 +42,7 @@
                         <h4>A Responsive Redesign of the Department of Agriculture, Water and Environment Website focusing on improving information architecture and ease of use through revitalised, modern design.</h4>
                         <button class="mockupButton">View Case Study</button>
                     </div>
-                    <img src="/images/aweMockup.png" width="60%">
+                    <img src="https://github.com/LPetrosino/Portfolio-HW19/blob/main/images/aweMockup.png?raw=true" width="60%">
                 </div>
             </div>
             <div class="line2"></div>
