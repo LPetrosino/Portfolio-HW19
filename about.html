@@ -9,16 +9,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Hotjar Tracking Code for https://lpetrosino.github.io/My_First_Repo/ -->
-    <script>    
-        (function(h,o,t,j,a,r){
-            h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-            h._hjSettings={hjid:2517345,hjsv:6};
-            a=o.getElementsByTagName('head')[0];
-            r=o.createElement('script');r.async=1;
-            r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-            a.appendChild(r);
-        })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-    </script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="/script.js"></script>
     <title>Document</title>
 </head>
 <body>
@@ -47,7 +39,7 @@
         </div>
     </div>
     <div class="content">
-        <div class="aboutcta">About
+        <div class="aboutcta" id="aboutcta">About
             <img src="https://github.com/LPetrosino/Portfolio-HW18/blob/main/images/arrow.png?raw=true">
         </div>
         <div id="projectSection">
@@ -125,10 +117,10 @@
                 <a id="footerTextb" class="footerText" href="index.html">Projects</a>
             </div>
             <div class="footerItems">
-                <button class="cvButton" href="">Download Resume</button>
+                <button class="cvButton" id="fbutton1" href="" onmouseover="footerbutton1hover()" onmouseleave="footerbutton1()">Download Resume</button>
             </div>
            <div class="footerItems">
-                <button class="contactButton" href="">Get In Touch</button>
+                <button class="contactButton" id="fbutton2" href="" onmouseover="footerbutton2hover()" onmouseleave="footerbutton2()">Get In Touch</button>
                 <svg id="lnkdIn" width="53" height="52" viewBox="0 0 53 52" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect width="53" height="52" rx="4" fill="white"/>
                 <path d="M48.3571 1H4.63147C2.6279 1 1 2.6183 1 4.60491V47.3951C1 49.3817 2.6279 51 4.63147 51H48.3571C50.3607 51 52 49.3817 52 47.3951V4.60491C52 2.6183 50.3607 1 48.3571 1ZM16.4138 43.8571H8.85491V19.9955H16.4252V43.8571H16.4138ZM12.6344 16.7366C10.2096 16.7366 8.25156 14.8058 8.25156 12.4397C8.25156 10.0737 10.2096 8.14286 12.6344 8.14286C15.0478 8.14286 17.0172 10.0737 17.0172 12.4397C17.0172 14.817 15.0592 16.7366 12.6344 16.7366ZM44.7484 43.8571H37.1895V32.25C37.1895 29.4821 37.1326 25.9219 33.2621 25.9219C29.3232 25.9219 28.7199 28.9353 28.7199 32.0491V43.8571H21.1609V19.9955H28.4125V23.2545H28.515C29.5281 21.3795 31.9984 19.404 35.6754 19.404C43.3254 19.404 44.7484 24.3482 44.7484 30.7768V43.8571Z" fill="#0A66C2"/>

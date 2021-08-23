@@ -39,15 +39,17 @@ nav {
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: normal;
-    font-size: 24px;
+    font-size: 26px;
     line-height: 16px;
     /* identical to box height, or 67% */
     color: #FFFFFF;
     padding-left: 2%;
     padding-right: 2%;
+    text-underline-offset: 8px;
 }
 #navTextb {
     margin-inline-end: auto;
+    color: #FA8942;
 }
 #navButton {
     background: rgba(47, 52, 83, 0.3);
@@ -143,10 +145,12 @@ nav {
     font-size: 24px;
     /* identical to box height, or 67% */
     color: #FFFFFF;
+    text-underline-offset: 8px;
 }
 #footerTextb {
     margin-left: 30px;
     margin-right: auto;
+    color: #FA8942;
 }
 .H1 {
     left: 0%;
@@ -399,6 +403,20 @@ nav {
     flex-direction: column;
     order: 2;
 }
+.mockupButton {
+    background: #40507C;
+    border: 2px solid white;
+    backdrop-filter: blur(6px);
+    border-radius: 4px;
+    margin-left: auto;
+    color: white;
+}
+@media only screen and (max-width: 600px) {
+    .mockupButton {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
 h3, p {
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
@@ -476,20 +494,6 @@ footer {
 @media only screen and (max-width: 500px) {
     #lnkdIn {
         margin-left: 2%;
-    }
-}
-.mockupButton {
-    background: #FFFFff;
-    border: 2px solid #485F86;
-    backdrop-filter: blur(6px);
-    border-radius: 4px;
-    margin-left: auto;
-    color: #485F86;
-}
-@media only screen and (max-width: 600px) {
-    .mockupButton {
-        margin-left: auto;
-        margin-right: auto;
     }
 }
 button {

@@ -39,12 +39,16 @@ nav {
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: normal;
-    font-size: 24px;
+    font-size: 26px;
     line-height: 16px;
     /* identical to box height, or 67% */
     color: #FFFFFF;
     padding-left: 2%;
     padding-right: 2%;
+    text-underline-offset: 8px;
+}
+#navTexta {
+    color: #FA8942;
 }
 #navTextb {
     margin-inline-end: auto;
@@ -184,6 +188,9 @@ nav {
     font-size: 24px;
     /* identical to box height, or 67% */
     color: #FFFFFF;
+}
+#footerTexta {
+    color: #FA8942;
 }
 #footerTextb {
     margin-left: 30px;
@@ -372,7 +379,7 @@ h4 {
     }
 }
 footer {
-    background: #60748E;
+    background: #36383F;
     width: 100%;
 }
 @media only screen and (max-width: 500px) {
